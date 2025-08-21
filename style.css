@@ -44,14 +44,11 @@ ul{list-style:none; padding:0; margin:0;}
 .footer-title, .footer svg{margin-right:.4em; margin-bottom:.5em; font-weight:bold; font-size:2em;}
 .wpp{padding-right:.1em}
 .popup{width:30%; top:0; right:0; height:100%; position:fixed; overflow:auto; background:var(--background); z-index:2; display:none; padding:1.5em;}
-.show{display:block}
 .switch{position:relative; display:inline-block; width:45px; height:25px; float:right}
 .switch input{opacity:0; width:0; height:0;}
 .slider{position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background:var(--text); transition:.4s; border-radius: 1em;}
 .slider:before{position:absolute; content:""; height:18px; width:18px; left:4px; bottom:4px; background:var(--background); transition:.4s; border-radius:50%;}
 .small{font-size:.7em;}
-.cookie{position:fixed; bottom:5em; background:var(--gray); padding:.8em; border-radius:2em; width:200px; font-size:.8em}
-.more{border:2px solid #DB3A00; border-radius:2em; padding:.5em; margin-left:.5em;}
 .carousel-container{position:relative; width:90%; max-width:800px; height:300px; display:flex; justify-content:center; align-items:center; margin:40px auto; perspective:1000px; visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.5s ease-in-out;}
 .carousel-slide{display:flex; align-items:center; justify-content:center; width:100%; height:100%; transform-style:preserve-3d}
 .carousel-image{width:45%; max-width:250px; height:200px; object-fit:cover; position:absolute; border-radius:10px; box-shadow:0 4px 15px rgba(0, 0, 0, 0.2); cursor:pointer; transition:transform 0.5s ease-in-out, opacity 0.5s ease-in-out, filter 0.5s ease-in-out;}
@@ -68,6 +65,6 @@ ul{list-style:none; padding:0; margin:0;}
 .menu-item{display:flex; justify-content:space-between; align-items:center; min-width:100%;}
 .top{width:99%;}
 .popup{top:0; left:0; right:0; min-width:90%;}
-.show, .cat-box{display:block;}
+.cat-box{display:block;}
 .carousel-image{height:auto;}
 }
