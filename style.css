@@ -38,9 +38,9 @@ ul{list-style:none; padding:0; margin:0;}
 .box{padding:20px; border:1px solid var(--border); border-radius:25px; margin-bottom:20px; height:55px; float:left; width:40%;}
 .info-box{margin:2em auto; max-width:80%;}
 .info{width:70%; float:right;}
-.info-title{font-size:1.2em; font-weight:bold; color:#E35336}
+.info-title{font-size:1.2em; font-weight:bold; color:#CC3600;}
 .mapgoogle{width:50%; height:300px; float:right; background:#000;}
-.footer{font-size:.8em; margin-top:3em; line-height:.8em; margin-bottom:3em;}
+.footer{font-size:.8em; margin-top:3em; margin-bottom:3em;}
 .footer-title, .footer svg{margin-right:.4em; margin-bottom:.5em; font-weight:bold; font-size:2em;}
 .wpp{padding-right:.1em}
 .popup{width:30%; top:0; right:0; height:100%; position:fixed; overflow:auto; background:var(--background); z-index:2; display:none; padding:1.5em;}
