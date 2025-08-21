@@ -312,22 +312,6 @@ if (body.classList.contains('dark-mode')) {localStorage.setItem('theme', 'dark')
   });
 });
 
-function hideCookieBanner() {
-const cookieBanner = document.querySelector('.cookie');
-if (cookieBanner) {cookieBanner.style.display = 'none';}
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-const localStorageKey = 'cookieBannerAccepted';
-
-if (localStorage.getItem(localStorageKey) === 'true') {hideCookieBanner();
-} else {
-setTimeout(() => {
-hideCookieBanner();
-localStorage.setItem(localStorageKey, 'true');
-}, 5000);}
-});
-
 if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
 navigator.serviceWorker.register('/menu/service-worker.js', {scope: '/menu/'})
