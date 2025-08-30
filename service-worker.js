@@ -1,15 +1,13 @@
 const CACHE_NAME = 'cache-img';
 const urlsToCache = [
-  '/menu/',
-  '/menu/img/espeto.jpg',
-  '/menu/img/sopa.jpg',
-  '/menu/img/coca.jpg',
-  '/menu/img/vitamina.jpg',
-  '/menu/img/bud.jpg',
-  '/menu/img/pudim.jpg',
-  '/menu/img/burger.jpg',
-  '/menu/img/batata.jpg',
-  '/menu/img/agrega.jpg',
+  '/img/espeto.webp',
+  '/img/sopa.webp',
+  '/img/coca.webp',
+  '/img/vitamina.webp',
+  '/img/bud.webp',
+  '/img/pudim.webp',
+  '/img/batata.webp',
+  '/img/agrega.webp',
 ];
 
 self.addEventListener('install', event => {event.waitUntil(
