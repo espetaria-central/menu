@@ -324,7 +324,7 @@ if (body.classList.contains('dark-mode')) {localStorage.setItem('theme', 'dark')
 
 if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-navigator.serviceWorker.register('/menu/service-worker.js', {scope: '/menu/'})
+navigator.serviceWorker.register('/service-worker.js', {scope: '/'})
 .then(registration => {console.log('Registrado com sucesso!');})
 .catch(error => {console.log('Erro:', error);});
     });
