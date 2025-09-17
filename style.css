@@ -17,7 +17,6 @@ ul{list-style:none; padding:0; margin:0;}
 .container{-moz-column-count:2; -webkit-column-count:2; column-count:2; margin:0 auto; max-width:80%;}
 .search-box{text-align:center; padding:10px; background:var(--background); position:fixed; top:0; z-index:1; width:100%; margin-left:-1.6em;}
 #searchInput{width:40%; padding:12px 18px; border:1px solid var(--border); border-radius:25px; font-size:1.1em; outline:none; transition:border-color 0.3s ease; background:transparent; color:var(--text);}
-#searchInput:focus{box-shadow:0 0 0 2px #E35336; border:none;}
 .cat-box{width:100%; min-height:60px; white-space:nowrap; overflow:auto; padding-top:1.5em; display:none; -ms-overflow-style:none; scrollbar-width:none;}
 .cat-box::-webkit-scrollbar{display:none}
 .cat-title{font-weight:bold; font-size:1.1em;}
