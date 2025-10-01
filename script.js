@@ -197,7 +197,7 @@ if (currentQuantity > 0) {
 currentQuantity--;
 quantitySpan.textContent = currentQuantity;
 selectedItems[itemName] = currentQuantity;
-increaseButton.style.border = currentQuantity > 0 ? '2px solid #E35336' : '';
+increaseButton.style.border = currentQuantity > 0 ? '2px solid #ff4500' : '';
 updateOrderButtonVisibility();
 updateTotalDisplay();
 updateCartDisplay();
@@ -210,7 +210,7 @@ let currentQuantity = parseInt(quantitySpan.textContent);
 currentQuantity++;
 quantitySpan.textContent = currentQuantity;
 selectedItems[itemName] = currentQuantity;
-increaseButton.style.border = currentQuantity > 0 ? '2px solid #E35336' : '';
+increaseButton.style.border = currentQuantity > 0 ? '2px solid #ff4500' : '';
 updateOrderButtonVisibility();
 updateTotalDisplay();
 updateCartDisplay();
@@ -303,11 +303,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const showButton = document.querySelector('.show');
 const closeButton = document.querySelector('.close');
 const popup = document.querySelector('.popup');
+const POPUP_URL_PATH = '/cart';
 
-if (showButton && closeButton && popup) {
-showButton.addEventListener('click', () => {popup.style.display = 'block';});
-closeButton.addEventListener('click', () => {popup.style.display = 'none';});
-} else {console.error("Erro");}
+function showPopup() {
+if (window.location.pathname !== POPUP_URL_PATH) {
+history.pushState({ popupOpen: true }, '', POPUP_URL_PATH);}
+popup.style.display = 'block';
+    }
+
+function hidePopup() {
+popup.style.display = 'none';
+if (window.location.pathname.includes(POPUP_URL_PATH)) {history.back();}
+}
+
+showButton.addEventListener('click', showPopup);
+closeButton.addEventListener('click', hidePopup);
+window.addEventListener('popstate', (event) => {
+if (!window.location.pathname.includes(POPUP_URL_PATH)) {
+if (popup.style.display === 'block') {popup.style.display = 'none';}
+} else {
+if (popup.style.display === 'none') {popup.style.display = 'block';}
+    }
+});
+
+if (window.location.pathname.includes(POPUP_URL_PATH)) {popup.style.display = 'block';}
 });
 
 document.addEventListener('DOMContentLoaded', () => {
