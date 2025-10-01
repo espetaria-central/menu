@@ -1,10 +1,10 @@
-:root{--background:#000; --text:#fff; --gray:#222; --border:#555; --orange:#ff4500}
-.dark-mode{--background:#fff; --text:#222; --gray:#f9f9f9; --border:#ccc; --orange:#CC3600}
+:root{--background:#000; --text:#fff; --gray:#222; --border:#555;}
+.dark-mode{--background:#fff; --text:#222; --gray:#f9f9f9; --border:#ccc;}
 body{background:var(--background); color:var(--text); transition:background-color 0.5s, color 0.5s; padding:20px; min-height:100vh; font-family:Helvetica, sans-serif; font-size:15px;}
 h1{text-align:center;}
-a{text-decoration: none; color:var(--text);}
+a{text-decoration:none; color:var(--text);}
 a.cat svg {vertical-align:middle;}
-button{border:none; background:none; color:var(--text);}
+button{border:none; background:none; color:var(--text); cursor:pointer;}
 label{font-weight:normal;}
 input:checked + .slider{background:#ff4500;}
 input:checked + .slider:before {transform: translateX(18px);}
@@ -14,8 +14,8 @@ ul{list-style:none; padding:0; margin:0;}
 .top-subtitle{font-size:1.3em;}
 .background{width:98.5vw; height:400px; margin-left:-1.6em; text-align:center; position:absolute;}
 .container{-moz-column-count:2; -webkit-column-count:2; column-count:2; margin:0 auto; max-width:80%;}
-.search-box{text-align:center; padding:10px; background:var(--background); position:fixed; top:0; z-index:1; width:100%; margin-left:-1.6em;}
-#searchInput{width:40%; padding:12px 18px; border:1px solid var(--border); border-radius:25px; font-size:1.1em; outline:none; transition:border-color 0.3s ease; background:transparent; color:var(--text);}
+.search-box{text-align:center; padding:10px; background:var(--background); position:fixed; top:0; z-index:1; width:100%; margin-left:-2.5em;}
+#searchInput{width:40%; padding:12px 18px; border:1px solid var(--border); border-radius:25px; font-size:1.1em; outline:none; background:transparent; color:var(--text);}
 .cat-box{width:100%; min-height:60px; white-space:nowrap; overflow:auto; padding-top:1.5em; display:none; -ms-overflow-style:none; scrollbar-width:none;}
 .cat-box::-webkit-scrollbar{display:none}
 .cat-title{font-weight:bold; font-size:1.1em;}
@@ -27,17 +27,17 @@ ul{list-style:none; padding:0; margin:0;}
 .cart-item-controls{float:right;}
 .menu-item{background:var(--gray); margin-bottom:.5em; padding:.5em; border-radius:2em; max-width:auto; white-space:nowrap;}
 .item-name{font-size:1em; font-weight:bold;}
-.item-price{font-size:1.1em; color:var(--orange); font-weight:bold; text-align:right; float:right;}
+.item-price{font-size:1.1em; color:#ff4500; font-weight:bold; text-align:right; float:right;}
 .total{position:fixed; bottom:.5em; right:1em; font-weight:bold; background:var(--gray); padding:15px; border-radius:25px; z-index:3;}
 #orderButton{position:fixed; bottom:.5em; left:1em; font-weight:bold; background:linear-gradient(90deg, #ff6347, #ff7f50, #ff4500); color:#fff; border:none; padding:15px; border-radius:25px; cursor:pointer; font-size:1em; font-family:Helvetica, sans-serif; z-index:4;}
 .decrease-btn, .increase-btn, .cart-item-controls button{width:30px; height:30px; border-radius:50%; border:1px solid var(--border); background:var(--background); cursor:pointer; font-size:18px; margin-right:5px; color:var(--text);}
 .cart-item-controls button{margin-top:-.4em;}
 .item-controls{display:inline-flex; align-items:center; margin-left:5px;}
 .item-quantity{min-width:20px; text-align:center; margin:0 5px; font-weight:bold; font-size:1em;}
-.box{padding:20px; border:1px solid var(--border); border-radius:25px; margin-bottom:20px; height:55px; float:left; width:40%;}
+.box{padding:20px; background:var(--gray); border-radius:2em; margin-bottom:20px; height:55px; float:left; width:40%;}
 .info-box{margin:2em auto; max-width:70%;}
 .info{width:70%; float:right;}
-.info-title{font-size:1.2em; font-weight:bold; color:var(--orange);}
+.info-title{font-size:1.2em; font-weight:bold;}
 .mapgoogle{width:50%; height:300px; float:right; background:#000;}
 .footer{font-size:.8em; margin-top:3em; margin-bottom:3em;}
 .footer-title, .footer svg{margin-right:.4em; margin-bottom:.5em; font-weight:bold; font-size:2em;}
@@ -56,7 +56,7 @@ ul{list-style:none; padding:0; margin:0;}
 }
 @media (max-width: 768px) {
 .top-title{font-size:3em;}
-#searchInput{width:70%; font-size:1em;}
+#searchInput{width:60%; font-size:1em;}
 .item-name, .item-price{font-size:1em;}
 .mapgoogle{width:100%; height:200px; margin-bottom:20px;}
 .box{width:90%;}
