@@ -2,6 +2,7 @@
 .dark-mode{--background:#fff; --text:#222; --gray:#f9f9f9; --border:#ccc;}
 body{background:var(--background); color:var(--text); transition:background-color 0.5s, color 0.5s; padding:20px; min-height:100vh; font-family:Helvetica, sans-serif; font-size:15px;}
 h1{text-align:center;}
+h1.menu{visibility: hidden;}
 a{text-decoration:none; color:var(--text);}
 a.cat svg {vertical-align:middle;}
 button{border:none; background:none; color:var(--text); cursor:pointer;}
@@ -35,7 +36,7 @@ ul{list-style:none; padding:0; margin:0;}
 .item-controls{display:inline-flex; align-items:center; margin-left:5px;}
 .item-quantity{min-width:20px; text-align:center; margin:0 5px; font-weight:bold; font-size:1em;}
 .box{padding:20px; background:var(--gray); border-radius:2em; margin-bottom:20px; height:55px; float:left; width:40%;}
-.info-box{margin:2em auto; max-width:70%;  margin-top:18em;}
+.info-box{margin:2em auto; max-width:70%;}
 .info{width:70%; float:right;}
 .info-title{font-size:1.2em; font-weight:bold;}
 .mapgoogle{width:50%; height:300px; float:right; background:#000;}
