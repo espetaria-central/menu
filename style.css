@@ -21,7 +21,7 @@ ul{list-style:none; padding:0; margin:0;}
 .cat-box::-webkit-scrollbar{display:none}
 .cat-title{font-weight:bold; font-size:1.1em;}
 .cat{border-radius:2em; width:auto; padding:1em; background:linear-gradient(90deg, #ff6347, #ff7f50, #ff4500); color:#fff;}
-.menu{margin-top:18em;}
+.menu{margin-top:8em;}
 .on{border-radius:2em; width:8px; background:transparent; height:8px; position:absolute; right:.3em; top:.5em;}
 .cart-empty-message{color:#777; text-align:center; padding:2em; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
 .cart-item{margin-bottom:.5em; padding:.8em; background:var(--gray); border-radius:2em; font-size:1em;}
